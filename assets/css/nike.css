@@ -1,0 +1,399 @@
+#html2{
+  font-size: 62.5%;
+  box-sizing: border-box;
+ 
+}
+main{
+  margin-top: 2%;
+}
+
+body {
+  margin: 0;
+  
+  height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+#root{
+  height: 100%;
+}
+
+h4{
+    margin-left: 1.4%;
+}
+
+#block_container{
+  align-items: center;
+  font-weight: bold;
+  font-size: 22px
+}
+#block7,#block8{
+  display: inline;
+}
+#H4{
+  margin-left: 7%;
+}
+.dropdown{
+
+}
+@media (max-width: 768px) {
+    #H4{
+      margin-left: 16%;
+      margin-top: 1%;
+      margin-bottom: 1.5%;
+    }
+    .dropdown{
+      margin-top: -5%;
+      margin-left: 68%;
+    }
+  
+}
+@media (max-width: 412px) {
+    #H4{
+      margin-left: 6.5%;
+      margin-top: 1%;
+      margin-bottom: 1.5%;
+      
+    }
+    main{
+      margin-right: 12%;
+    }
+    .dropdown{
+      margin-top: -6%;
+      margin-left: 64%;
+    }
+  
+}
+
+.header{
+  grid-area: header;
+  background-color: transparent;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.brand a{
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+.header-links a{
+  color: #ffffff ;
+  text-decoration: none;
+  /* margin-right: 150px; */
+  font-size: 1.5rem;
+ 
+}
+.header-links a:hover{
+  color: rgb(71, 70, 70);
+}
+
+  
+.hwrap {
+    /* (A1) DIMENSIONS */
+    margin-top: 4%;
+    width: 100%;
+    height: 60px; /* OPTIONAL */
+  
+    /* (A2) COSMETICS */
+    background: #f5f5f5;
+   /* border: 2px solid #ffcf1f;*/
+    overflow: hidden; /* HIDE SCROLLBARS */
+  }
+  
+  /* (B) MIDDLE CONTAINER - FLEX LAYOUT */
+  .hmove {
+    display: flex;
+    position: relative;
+    top: 0px; right: 0;
+  }
+  
+  /* (C) SLIDES - FORCE INTO ONE LONG HORIZONTAL ROW */
+  .hslide {
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1%;
+    font-size: 13px;
+    line-height: 1%;
+  }
+  
+  /* (D) SLIDE ANIMATION */
+  @keyframes slideh {
+   
+    0% { right: 0; }
+    30% { right: 0; }
+    33% { right: 100%; }
+    63% { right: 100%; }
+    66% { right: 200%; }
+    97% { right: 200%; }
+    100% { right: 0; }
+  }
+  .hmove { animation: slideh linear 15s infinite; }
+  .hmove:hover { animation-play-state: paused; }
+
+
+
+  /* banner */
+
+  .banner{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: 10 10px;
+    
+  }
+  .banner1{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: 10 10px;
+    
+  }
+  .heading{
+    text-align: center;
+    font-size: 50px;
+    line-height: inherit;
+    margin-top: 40px;
+     font-weight: 500;
+     
+     
+  }
+  .text{
+    text-align: center;
+    font-size: 16px;
+    line-height: inherit;
+  
+     font-weight: 500;
+  }
+
+
+  /* /trending/ */
+.container .btn2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+  text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 1.5;
+    margin: 6px 6px 0px 0px;
+    padding: 8px 28px;
+  }
+  .container .btn2:hover {
+    background-color: black;
+  }
+  .txt{
+    display: block;
+    margin-block-start:1em;
+    margin-block-end:1em;
+    margin-inline-start:0px;
+     margin-inline-end:0px;
+     margin-bottom: 8px;
+     font-weight: 500;
+     color: #000000;
+     font-size: 20px;
+     line-height: 1.2;
+     overflow-wrap: normal;
+      transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 0%;
+  }
+  .container .btn3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: black;
+    font-size: 16px;
+  text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 1.5;
+    margin: 6px 6px 0px 0px;
+    padding: 8px 28px;
+  }
+  .container .btn3:hover {
+    background-color: rgb(185, 184, 183);
+    
+  }
+
+
+
+
+  a:link {
+    color: black;
+  }
+  a:visited {
+    color: rgb(141, 140, 140);
+    opacity: 0.5;
+  }
+a:hover{
+    color: rgb(129, 127, 127);
+
+}
+
+ul {
+    list-style-type: none;
+}
+/* 
+producr */
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.products li{
+  list-style-type: none;
+  flex: 0 1 34rem;
+  padding: 0%;
+  margin: 1rem;
+  height: 50rem;
+  /* border-bottom: .1rem #c0c0c0 solid; */
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+}
+.product-name{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.product-brand{
+  font-size: 1.5rem;
+  color: #808080;
+}
+.product-price{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.product-image{
+  max-height: 34rem;
+  max-width: 34rem;
+}
+.product-rating{
+  margin-bottom: 1rem;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer" ;
+  
+  
+
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.row.center{
+  justify-content: center;
+}
+
+/* image */
+img{
+  border-radius: 0;
+}
+img.medium{
+    max-width: 35rem;
+    width: 100%;
+}
+
+/* card */
+  .card{
+    /* border: 0.1rem #c0c0c0 solid; */
+    background-color: #ffffff;
+    /* border-radius: 0.5rem; */
+    margin: 1rem;
+    
+    
+  }
+
+  .card-body{
+    padding: 1rem;
+    text-align: left;
+    
+  }
+  .card-body > * {
+    margin-bottom: 0.5rem;
+  }
+
+
+  
+
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
